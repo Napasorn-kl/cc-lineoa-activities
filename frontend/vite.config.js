@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react(), tailwindcss()],
-  base: '/cc-lineoa-activities/',
+  base: command === 'build' ? '/cc-lineoa-activities/' : '/',
   server: {
     port: 5174,
     proxy: {
@@ -15,4 +15,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
