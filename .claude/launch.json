@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Frontend",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["start.sh"],
+      "port": 5174,
+      "cwd": "/Users/hello/CC_lineOA/frontend"
+    },
+    {
+      "name": "Backend",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["index.js"],
+      "port": 3001,
+      "cwd": "/Users/hello/CC_lineOA/backend"
+    }
+  ]
+}
